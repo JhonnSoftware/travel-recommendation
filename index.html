@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre destinos increíbles y encuentra tu próximo viaje con Travel Recommendation.">
+    <title>Travel Recommendation | Explore the World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación principal -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Travel<span>Recommendation</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search beaches, temples, countries..."
+                    aria-label="Buscar destinos"
+                >
+                <button id="searchButton">Search</button>
+                <button id="clearButton" class="clear-button">Clear</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Página de inicio -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">DISCOVER NEW PLACES</p>
+                <h1>Explore the world, one journey at a time.</h1>
+                <p class="hero-description">
+                    Welcome to Travel Recommendation! Discover beautiful
+                    beaches, impressive temples and amazing countries.
+                    Find inspiration for your next adventure and explore
+                    destinations that make every trip unforgettable.
+                </p>
+                <a href="#destinations" class="primary-button">
+                    Explore destinations
+                </a>
+            </div>
+        </section>
+
+        <!-- Resultados de búsqueda -->
+        <section id="destinations" class="destinations section-container">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR NEXT ADVENTURE</p>
+                <h2>Travel recommendations</h2>
+                <p>Explore our favorite destinations around the world.</p>
+            </div>
+
+            <div id="searchMessage" class="search-message" aria-live="polite"></div>
+
+            <div class="recommendation-group">
+                <h3>Beautiful Beaches</h3>
+                <div class="cards-grid" id="beachResults">
+
+                    <article class="destination-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900"
+                            alt="Tropical beach with turquoise water"
+                        >
+                        <div class="card-content">
+                            <h4>Maldives Beach</h4>
+                            <p>Enjoy crystal-clear waters, white sand and a peaceful tropical atmosphere.</p>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900"
+                            alt="Beautiful tropical beach surrounded by nature"
+                        >
+                        <div class="card-content">
+                            <h4>Caribbean Beach</h4>
+                            <p>Discover sunny shores, colorful landscapes and unforgettable ocean views.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="recommendation-group">
+                <h3>Famous Temples</h3>
+                <div class="cards-grid" id="templeResults">
+
+                    <article class="destination-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1548013146-72479768bada?w=900"
+                            alt="Ancient Indian temple architecture"
+                        >
+                        <div class="card-content">
+                            <h4>Taj Mahal</h4>
+                            <p>Explore an extraordinary monument known for its beautiful architecture and history.</p>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=900"
+                            alt="Ancient temple surrounded by a historic landscape"
+                        >
+                        <div class="card-content">
+                            <h4>Ancient Temple</h4>
+                            <p>Discover impressive historic structures and experience the culture of ancient civilizations.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="recommendation-group">
+                <h3>Explore Countries</h3>
+                <div class="cards-grid" id="countryResults">
+
+                    <article class="destination-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900"
+                            alt="Paris city with Eiffel Tower"
+                        >
+                        <div class="card-content">
+                            <h4>France</h4>
+                            <p>Enjoy charming streets, art, history and the wonderful atmosphere of Paris.</p>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900"
+                            alt="Traditional Japanese street"
+                        >
+                        <div class="card-content">
+                            <h4>Japan</h4>
+                            <p>Experience a unique combination of traditional culture, modern cities and nature.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Acerca de nosotros -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">WHO WE ARE</p>
+                    <h2>About Us</h2>
+                    <p>We believe every journey begins with inspiration.</p>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1000"
+                            alt="Traveler exploring a new destination"
+                        >
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Making travel discovery easier</h3>
+                        <p>
+                            Travel Recommendation is a website created to
+                            help people discover interesting places around
+                            the world. Our goal is to make travel inspiration
+                            simple, accessible and enjoyable.
+                        </p>
+                        <p>
+                            We bring together recommendations for beaches,
+                            temples and countries so visitors can explore
+                            different destinations and plan their next
+                            adventure.
+                        </p>
+                        <p>
+                            Whether you enjoy relaxing by the sea, learning
+                            about history or discovering new cultures,
+                            there is always a new place waiting for you.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="values-grid">
+                    <article class="value-card">
+                        <span>🌍</span>
+                        <h3>Our Mission</h3>
+                        <p>To inspire people to discover new destinations and cultures.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <span>✈️</span>
+                        <h3>Our Vision</h3>
+                        <p>To become a helpful starting point for travelers around the world.</p>
+                    </article>
+
+                    <article class="value-card">
+                        <span>💙</span>
+                        <h3>Our Values</h3>
+                        <p>Curiosity, discovery, respect and a love for travel.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>Contact Us</h2>
+                    <p>Have a question or a travel suggestion? Write to us.</p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <label for="contactName">Your name</label>
+                    <input
+                        type="text"
+                        id="contactName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="contactEmail">Email address</label>
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <label for="contactMessage">Your message</label>
+                    <textarea
+                        id="contactMessage"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="primary-button">
+                        Send message
+                    </button>
+
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Travel Recommendation. Explore the world!</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
